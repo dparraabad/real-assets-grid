@@ -1,0 +1,76 @@
+.sales-container {
+  padding: 1rem;
+}
+
+.sales-container h2 {
+  text-align: center;
+}
+
+.sale {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1rem;
+}
+
+.ad-outstanding {
+  grid-column: 1 / 3;
+}
+
+.ad-outstanding img {
+  max-height: 60%;
+}
+
+.card {
+  padding: 1rem;
+  background-color: var(--white);
+}
+
+.card h3 {
+  margin: 1rem 0 0;
+  font-size: 2rem;
+}
+
+.card p:not(.price) {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.ad-outstanding .price {
+  font-size: 1.5rem;
+}
+
+.price {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.price span {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.ad-outstanding .button {
+  font-size: 1.3rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
